@@ -5,7 +5,7 @@ module.exports = {
             loader:  'url',
             options: {
                 limit:      10000,
-                name:       'images/[name].[ext]',
+                name:       'images/[name].[ext]?[hash]',
                 fallback:   'file-loader',
                 publicPath: '../',
             }

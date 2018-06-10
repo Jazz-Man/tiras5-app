@@ -19,7 +19,7 @@ gen### ArchLinuxPackages template
 *.sig
 
 pkg/
-src/
+dist/
 ### Node template
 # Logs
 logs

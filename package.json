@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --progress",
-    "prod": "cross-env NODE_ENV=production webpack --progress"
+    "wp": "webpack --progress --colors",
+    "wds": "webpack-dev-server --hot --inline --devtool eval --history-api-fallback --watch --watch-content-base",
+    "server": "cross-env NODE_ENV=development npm run wds -- --progress --colors",
+    "dev": "cross-env NODE_ENV=development npm run wp",
+    "prod": "cross-env NODE_ENV=production npm run wp"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,7 @@
   },
   "homepage": "https://github.com/Jazz-Man/tiras5-app#readme",
   "dependencies": {
-    "@material-ui/core": "^1.2.0",
+    "@material-ui/core": "^1.2.1",
     "@material-ui/icons": "^1.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
@@ -45,6 +48,7 @@
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
     "process": "^0.11.10",
+    "react-hot-loader": "^4.3.1",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",

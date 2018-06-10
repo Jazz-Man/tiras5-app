@@ -1,7 +1,8 @@
 const merge = require("webpack-merge");
 
 const sharedConfig = require("./shared.js");
-const { settings, outputPath } = require("./configuration.js");
+const { outputPath } = require("./configuration.js");
+
 
 module.exports = merge(sharedConfig, {
   mode: "development",
@@ -35,15 +36,10 @@ module.exports = merge(sharedConfig, {
 
   devServer: {
     clientLogLevel: "none",
-    https: settings.dev_server.https,
-    host: settings.dev_server.host,
-    port: settings.dev_server.port,
     contentBase: outputPath,
-    historyApiFallback: true,
-    watchContentBase: true,
     compress: true,
-    headers: { "Access-Control-Allow-Origin": "*" },
     watchOptions: {
+      poll: true,
       ignored: /node_modules/
     }
   }

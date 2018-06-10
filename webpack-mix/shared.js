@@ -14,8 +14,8 @@ const {
 const entry = getEntryPoints();
 
 const output = {
-        filename: 'js/[name].js',
-        chunkFilename: 'js/[id]-[name].chunk.js',
+        filename: 'js/[name].js?[hash]',
+        chunkFilename: 'js/[id]-[name].chunk.js?[chunkhash]',
         path: outputPath,
         pathinfo: true,
         crossOriginLoading: "use-credentials"

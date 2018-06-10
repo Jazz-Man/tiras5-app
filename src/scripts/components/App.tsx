@@ -26,7 +26,7 @@ interface AppProps {
   classes: any;
 }
 
-class SimpleAppBar extends React.Component<AppProps> {
+class App extends React.Component<AppProps> {
   public render() {
     const { message, classes } = this.props;
     return (
@@ -55,4 +55,4 @@ class SimpleAppBar extends React.Component<AppProps> {
   }
 }
 
-export default hot(module)(withStyles(styles)(SimpleAppBar))
+export default hot(module)(withStyles(styles)(App))

@@ -13,7 +13,10 @@ module.exports = new TsConfigPathsPlugin({
           modules: false
         }
       ]
-    ]
+    ],
+      plugins:[
+          ["transform-react-jsx", { "pragma":"h" }]
+      ]
   },
   usePrecompiledFiles: true
 });

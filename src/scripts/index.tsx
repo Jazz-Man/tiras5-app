@@ -11,5 +11,5 @@ render(
         <CssBaseline />
         <App message="World TEST" />
     </React.Fragment>,
-    document.getElementById('root'),
+    document.getElementById('root')
 );

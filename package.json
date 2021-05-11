@@ -44,7 +44,7 @@
     "google-fonts-webpack-plugin": "^0.4.4",
     "html-webpack-plugin": "^3.2.0",
     "html-webpack-root-plugin": "^0.10.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
     "process": "^0.11.10",
